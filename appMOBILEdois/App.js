@@ -1,20 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { Text, View, Button, TouchableOpacity } from "react-native";
+
+// IMPORTAÇÃO STYLES:
+import { styles } from "./src/style/styles.js";
+
+// IMPORTAÇÃO SecondComponent:
+import { SecondComponent } from "./src/components/SecondComponent.js";
+
+// IMPORTAÇÃO TouchComponent:
+import TouchComponent from "./src/components/TouchComponent.js";
 
 export default function App() {
+  const saveBTN = () => {
+    alert("Save!");
+  };
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text>Hello</Text>
+      <TouchComponent txt="Salvar" funcClickBTN={saveBTN} />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

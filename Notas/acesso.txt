@@ -1,0 +1,4 @@
+INSTALAÇÃO:
+>npx create-expo-app --template
+>Choose a template: » Blank
+>npx expo start --tunnel

@@ -17,13 +17,13 @@ export default function App() {
   const [altura, setAltura] = useState("");
   const [modalVisible, setModalVisible] = useState(false);
 
-  // imprimir imc
+  // calcular imc
   function calcIMC(peso, altura) {
     const IMC = peso / (altura * altura);
     return IMC;
   }
 
-  // contar imc
+  // classificar imc
   function IMC() {
     let imc = peso / (altura * altura);
 
@@ -83,11 +83,11 @@ export default function App() {
       <Modal transparent={true} visible={modalVisible} animationType="slide">
         <View style={styles.modalBackground}>
           <View style={styles.modalContainer}>
-            {/* contar imc */}
+            {/* calcular imc */}
             {peso && altura ? (
               <Text style={{ fontSize: 20 }}>Você está {IMC()}</Text>
             ) : null}
-            {/* imprimir imc */}
+            {/* classificar imc */}
             <Text style={{ fontSize: 15 }}>{calcIMC(peso, altura)}</Text>
             <Button
               title="Ocultar resultados"

@@ -1,5 +1,5 @@
 import { TextInput } from "react-native";
-import { styles } from "../pages/styles/styles";
+import { styles } from "../styles/styles";
 
 
 export default function InputComp({ textPlaceHolder, password }) {

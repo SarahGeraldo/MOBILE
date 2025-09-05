@@ -30,6 +30,8 @@ const styles = StyleSheet.create({
 
   titule: {
     fontSize: 24,
-    fontWeight:
+    fontWeight: "bold",
+    marginBottom: 30,
+    textAlign:
   },
 });
